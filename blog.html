@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Blog | Skyban Roofing Systems</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; padding: 80px 10%; }
+        .blog-card { border: 1px solid #eee; border-radius: 10px; overflow: hidden; transition: var(--transition); }
+        .blog-card:hover { transform: translateY(-10px); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .blog-img { height: 200px; background: var(--gray-light); display: flex; align-items: center; justify-content: center; }
+        .blog-content { padding: 30px; }
+        .blog-content h2 { font-size: 20px; margin: 10px 0; }
+        .category { font-size: 12px; font-weight: 700; color: var(--primary); text-transform: uppercase; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.jpg" alt="Skyban Roofing Systems" style="height: 60px;">
+            </a>
+            <a href="request-sample.html" class="cta-button">REQUEST SAMPLE</a>
+        </nav>
+    </header>
+
+    <section style="padding: 80px 10%; background: var(--charcoal); color: white; text-align: center;">
+        <h1 style="font-size: 48px;">ROOFING BLOG</h1>
+        <p>Expert advice, industry trends, and maintenance tips for your Skyban roof.</p>
+    </section>
+
+    <div class="blog-grid">
+        <div class="blog-card">
+            <div class="blog-img" style="background: linear-gradient(135deg, #c0622a, #8b3a14);"></div>
+            <div class="blog-content">
+                <span class="category">MAINTENANCE</span>
+                <h2>Are Stone-Coated Roofs Good in Hot & Humid Climates?</h2>
+                <p>Discover why stone-coated steel is the ultimate choice for South India's tropical weather.</p>
+                <a href="#" class="nav-link" style="margin-top: 20px; display: inline-block;">READ ARTICLE →</a>
+            </div>
+        </div>
+        <div class="blog-card">
+            <div class="blog-img" style="background: linear-gradient(135deg, #455a64, #1a1a1a);"></div>
+            <div class="blog-content">
+                <span class="category">DESIGN</span>
+                <h2>Top 5 Roofing Trends in Kerala for 2026</h2>
+                <p>From Shingle to Roman profiles, see what's trending in Kerala's luxury villa designs.</p>
+                <a href="#" class="nav-link" style="margin-top: 20px; display: inline-block;">READ ARTICLE →</a>
+            </div>
+        </div>
+        <div class="blog-card">
+            <div class="blog-img" style="background: linear-gradient(135deg, #004d40, #26a69a);"></div>
+            <div class="blog-content">
+                <span class="category">GUIDE</span>
+                <h2>The Importance of UPVC Raingutters for Your Home</h2>
+                <p>Protect your foundation and walls from monsoon damage with a proper drainage system.</p>
+                <a href="#" class="nav-link" style="margin-top: 20px; display: inline-block;">READ ARTICLE →</a>
+            </div>
+        </div>
+    </div>
+
+    <footer style="background: #1a1a1a; color: white; padding: 40px 5%; text-align: center;">
+        <p>© 2026 Skyban Roofing Systems. All rights reserved.</p>
+    </footer>
+</body>
+</html>

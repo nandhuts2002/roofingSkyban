@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyban Shake | Stone Coated Roofing Tiles</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .product-hero { height: 60vh; background: linear-gradient(135deg, #1a1a1a, #5d4037); display: flex; align-items: center; padding: 0 10%; color: white; }
+        .profile-strip { background: var(--gray-light); padding: 20px 5%; display: flex; justify-content: center; gap: 20px; overflow-x: auto; }
+        .profile-item { padding: 10px 20px; background: white; border: 1px solid #ddd; border-radius: 4px; font-weight: 700; white-space: nowrap; }
+        .profile-item.active { background: var(--primary); color: white; border-color: var(--primary); }
+        .color-section { padding: 80px 5%; display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
+        .color-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
+        .swatch { width: 100%; aspect-ratio: 1; border-radius: 50%; cursor: pointer; border: 3px solid transparent; transition: var(--transition); }
+        .swatch:hover, .swatch.active { border-color: var(--primary); transform: scale(1.1); }
+        .house-visualizer { background: #eee; border-radius: 10px; height: 400px; display: flex; align-items: center; justify-content: center; position: relative; }
+        #roof-image { width: 80%; height: 60%; background: #5d4037; clip-path: polygon(50% 0%, 0% 100%, 100% 100%); transition: background 0.5s ease; }
+        .specs-table { width: 100%; border-collapse: collapse; margin-top: 30px; }
+        .specs-table th, .specs-table td { padding: 15px; border-bottom: 1px solid #eee; text-align: left; }
+        .specs-table th { background: var(--gray-light); }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.jpg" alt="Skyban Roofing Systems" style="height: 60px;">
+            </a>
+            <div class="main-nav">
+                <ul>
+                    <li><a href="stone-coated-tiles.html" class="nav-link active">STONE COATED TILES</a></li>
+                    <li><a href="upvc-raingutters.html" class="nav-link">UPVC RAINGUTTERS</a></li>
+                </ul>
+            </div>
+            <a href="request-sample.html" class="cta-button">REQUEST SAMPLE</a>
+        </nav>
+    </header>
+    <section class="product-hero">
+        <div class="hero-content">
+            <span class="slide-label">STONE COATED TILES</span>
+            <h1 style="font-size: 48px;">SKYBAN SHAKE</h1>
+            <p style="font-size: 20px; margin: 20px 0;">The rustic charm of authentic wood shakes with lifetime durability of stone-coated steel.</p>
+            <div class="slide-btns">
+                <a href="request-sample.html" class="cta-button">GET A QUOTE</a>
+                <a href="#visualizer" class="cta-button btn-secondary">SEE IT ON YOUR ROOF</a>
+            </div>
+        </div>
+    </section>
+    <div class="profile-strip">
+        <a href="shingle.html" class="profile-item">SHINGLE</a>
+        <a href="shake.html" class="profile-item active">SHAKE</a>
+        <a href="classic.html" class="profile-item">CLASSIC</a>
+        <a href="bond.html" class="profile-item">BOND</a>
+        <a href="roman.html" class="profile-item">ROMAN</a>
+    </div>
+    <section class="color-section" id="visualizer">
+        <div class="visualizer-left">
+            <h2>CHOOSE YOUR COLOUR</h2>
+            <div class="color-grid">
+                <div class="swatch active" data-color="#5d4037" style="background: #5d4037;"></div>
+                <div class="swatch" data-color="#1a1a1a" style="background: #1a1a1a;"></div>
+                <div class="swatch" data-color="#8b3a14" style="background: #8b3a14;"></div>
+                <div class="swatch" data-color="#3e2723" style="background: #3e2723;"></div>
+            </div>
+            <table class="specs-table">
+                <tr><th>Material</th><td>Stone Coated Steel</td></tr>
+                <tr><th>Weight</th><td>6.4 kg/sq.m</td></tr>
+                <tr><th>Wind Rating</th><td>180 km/h</td></tr>
+                <tr><th>Warranty</th><td>50 Years</td></tr>
+            </table>
+        </div>
+        <div class="visualizer-right"><div class="house-visualizer"><div id="roof-image"></div></div></div>
+    </section>
+    <footer style="background: #1a1a1a; color: white; padding: 40px 5%; text-align: center;"><p>© 2026 Skyban Roofing Systems. All rights reserved.</p></footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
