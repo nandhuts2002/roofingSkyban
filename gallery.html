@@ -144,7 +144,7 @@
     <header>
         <nav class="nav-container">
             <a href="index.html" class="logo">
-                <img src="assets/logo.jpg" alt="Skyban Roofing Systems" style="height: 60px;">
+                <img src="assets/logo.jpg" alt="Skyban Roofing Systems" style="height: 85px;">
             </a>
             <div class="main-nav">
                 <ul>
@@ -161,74 +161,122 @@
         <h1>SKYBAN METAL ROOFING GALLERY</h1>
         <p>See Why Homeowners and Contractors Choose Skyban Metal Roofing</p>
         <div class="type-tabs">
-            <a href="#">RESIDENTIAL ROOFING</a>
+            <a href="#" class="active">RESIDENTIAL ROOFING</a>
             <a href="#">COMMERCIAL ROOFING</a>
         </div>
         <p class="disclaimer">Due to lighting and the variance in individual digital displays, roof colors may vary slightly from the actual product.</p>
     </div>
 
     <div class="filter-controls">
-        <div class="filter-buttons">
-            <button class="filter-btn active">All</button>
-            <button class="filter-btn">Skyban Roman</button>
-            <button class="filter-btn">Skyban Classic</button>
-            <button class="filter-btn">Skyban Shingle</button>
-            <button class="filter-btn">Skyban Shake</button>
-            <button class="filter-btn">Skyban Bond</button>
+        <div class="filter-buttons" id="product-filters">
+            <button class="filter-btn active" data-product="all">All</button>
+            <button class="filter-btn" data-product="Skyban Roman">Skyban Roman</button>
+            <button class="filter-btn" data-product="Skyban Classic">Skyban Classic</button>
+            <button class="filter-btn" data-product="Skyban Shingle">Skyban Shingle</button>
+            <button class="filter-btn" data-product="Skyban Shake">Skyban Shake</button>
+            <button class="filter-btn" data-product="Skyban Bond">Skyban Bond</button>
         </div>
         <div class="color-filter">
             <label>Choose Color</label>
-            <select>
-                <option>All</option>
-                <option>Charcoal</option>
-                <option>Terracotta</option>
-                <option>Slate Grey</option>
-                <option>Rustic Red</option>
+            <select id="color-select">
+                <option value="all">All</option>
+                <option value="Charcoal">Charcoal</option>
+                <option value="Terracotta">Terracotta</option>
+                <option value="Slate Grey">Slate Grey</option>
+                <option value="Midnight Eclipse">Midnight Eclipse</option>
+                <option value="Antique Brown">Antique Brown</option>
+                <option value="Granite Grey">Granite Grey</option>
+                <option value="Rustic Red">Rustic Red</option>
             </select>
         </div>
     </div>
 
-    <div class="gallery-grid">
-        <div class="gallery-item">
+    <div class="gallery-grid" id="gallery-grid">
+        <!-- Generated Images -->
+        <div class="gallery-item" data-product="Skyban Roman" data-color="Terracotta">
+            <img src="assets/roman-terracotta.png" alt="Skyban Roman Terracotta">
+            <div class="item-label">
+                <span class="label-product">Skyban Roman</span>
+                <span class="label-color">Terracotta</span>
+            </div>
+        </div>
+        <div class="gallery-item" data-product="Skyban Shake" data-color="Charcoal">
+            <img src="assets/shake-charcoal.png" alt="Skyban Shake Charcoal">
+            <div class="item-label">
+                <span class="label-product">Skyban Shake</span>
+                <span class="label-color">Charcoal</span>
+            </div>
+        </div>
+        <div class="gallery-item" data-product="Skyban Shingle" data-color="Midnight Eclipse">
+            <img src="assets/shingle-midnight.png" alt="Skyban Shingle Midnight">
+            <div class="item-label">
+                <span class="label-product">Skyban Shingle</span>
+                <span class="label-color">Midnight Eclipse</span>
+            </div>
+        </div>
+
+        <!-- Curated Images -->
+        <div class="gallery-item" data-product="Skyban Roman" data-color="Rustic Red">
             <img src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?auto=format&fit=crop&q=80&w=800" alt="Skyban Roman">
             <div class="item-label">
                 <span class="label-product">Skyban Roman</span>
-                <span class="label-color">Terracotta Red</span>
+                <span class="label-color">Rustic Red</span>
             </div>
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-product="Skyban Shake" data-color="Granite Grey">
             <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800" alt="Skyban Shake">
             <div class="item-label">
                 <span class="label-product">Skyban Shake</span>
                 <span class="label-color">Granite Grey</span>
             </div>
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-product="Skyban Shingle" data-color="Midnight Eclipse">
             <img src="https://images.unsplash.com/photo-1632750433192-308692873420?auto=format&fit=crop&q=80&w=800" alt="Skyban Shingle">
             <div class="item-label">
                 <span class="label-product">Skyban Shingle</span>
                 <span class="label-color">Midnight Eclipse</span>
             </div>
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-product="Skyban Roman" data-color="Antique Brown">
             <img src="https://images.unsplash.com/photo-1513584684374-8bdb7489feef?auto=format&fit=crop&q=80&w=800" alt="Skyban Roman">
             <div class="item-label">
                 <span class="label-product">Skyban Roman</span>
-                <span class="label-color">Venetian Gold</span>
+                <span class="label-color">Antique Brown</span>
             </div>
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-product="Skyban Bond" data-color="Antique Brown">
             <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=800" alt="Skyban Bond">
             <div class="item-label">
                 <span class="label-product">Skyban Bond</span>
                 <span class="label-color">Antique Brown</span>
             </div>
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-product="Skyban Classic" data-color="Slate Grey">
             <img src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?auto=format&fit=crop&q=80&w=800" alt="Skyban Classic">
             <div class="item-label">
                 <span class="label-product">Skyban Classic</span>
                 <span class="label-color">Slate Grey</span>
+            </div>
+        </div>
+        <div class="gallery-item" data-product="Skyban Roman" data-color="Charcoal">
+            <img src="https://images.unsplash.com/photo-1449156059431-789955418921?auto=format&fit=crop&q=80&w=800" alt="Skyban Roman">
+            <div class="item-label">
+                <span class="label-product">Skyban Roman</span>
+                <span class="label-color">Charcoal</span>
+            </div>
+        </div>
+        <div class="gallery-item" data-product="Skyban Shingle" data-color="Slate Grey">
+            <img src="https://images.unsplash.com/photo-1493666438817-866a91353ca9?auto=format&fit=crop&q=80&w=800" alt="Skyban Shingle">
+            <div class="item-label">
+                <span class="label-product">Skyban Shingle</span>
+                <span class="label-color">Slate Grey</span>
+            </div>
+        </div>
+        <div class="gallery-item" data-product="Skyban Bond" data-color="Terracotta">
+            <img src="https://images.unsplash.com/photo-1430285561322-7808604715df?auto=format&fit=crop&q=80&w=800" alt="Skyban Bond">
+            <div class="item-label">
+                <span class="label-product">Skyban Bond</span>
+                <span class="label-color">Terracotta</span>
             </div>
         </div>
     </div>
@@ -237,6 +285,42 @@
         <p>© 2026 Skyban Roofing Systems. All rights reserved.</p>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const productBtns = document.querySelectorAll('#product-filters .filter-btn');
+            const colorSelect = document.getElementById('color-select');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            function filterGallery() {
+                const activeProduct = document.querySelector('#product-filters .filter-btn.active').dataset.product;
+                const activeColor = colorSelect.value;
+
+                galleryItems.forEach(item => {
+                    const itemProduct = item.dataset.product;
+                    const itemColor = item.dataset.color;
+
+                    const productMatch = (activeProduct === 'all' || itemProduct === activeProduct);
+                    const colorMatch = (activeColor === 'all' || itemColor === activeColor);
+
+                    if (productMatch && colorMatch) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            }
+
+            productBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    productBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    filterGallery();
+                });
+            });
+
+            colorSelect.addEventListener('change', filterGallery);
+        });
+    </script>
+
 </body>
 </html>

@@ -103,11 +103,10 @@
     </style>
 </head>
 <body>
-    <!-- HEADER (Simplified for brevity, reuse logic from index.html) -->
     <header>
         <nav class="nav-container">
             <a href="index.html" class="logo">
-                <img src="assets/logo.jpg" alt="Skyban Roofing Systems" style="height: 60px;">
+                <img src="assets/logo.jpg" alt="Skyban Roofing Systems" style="height: 85px;">
             </a>
             <div class="main-nav">
                 <ul>
@@ -119,14 +118,14 @@
         </nav>
     </header>
 
-    <section class="product-hero">
+    <section class="product-hero" style="background-image: url('assets/shingle-hero.png'); height: 70vh;">
         <div class="hero-content">
-            <span class="slide-label">STONE COATED TILES</span>
-            <h1 style="font-size: 48px;">SKYBAN SHINGLE</h1>
-            <p style="font-size: 20px; margin: 20px 0;">Deep shadow-line stone-coated tile providing the look of traditional asphalt shingles with the strength of steel.</p>
-            <div class="slide-btns">
-                <a href="request-sample.html" class="cta-button">GET A QUOTE</a>
-                <a href="#visualizer" class="cta-button btn-secondary">SEE IT ON YOUR ROOF</a>
+            <span style="color: var(--primary-light); font-weight: 700; text-transform: uppercase; letter-spacing: 2px;">Architectural Series</span>
+            <h1 style="font-size: clamp(40px, 8vw, 72px); line-height: 1.1; margin: 10px 0;">SKYBAN SHINGLE</h1>
+            <p style="font-size: 20px; max-width: 700px; margin: 20px auto; opacity: 0.9;">The thick-cut, dimensional look of asphalt shingles combined with the strength and longevity of stone-coated steel.</p>
+            <div class="slide-btns" style="margin-top: 40px;">
+                <a href="request-sample.html" class="cta-button">GET A FREE QUOTE</a>
+                <a href="#visualizer" class="cta-button btn-secondary">COLOUR CHOOSER</a>
             </div>
         </div>
     </section>
@@ -139,41 +138,85 @@
         <a href="roman.html" class="profile-item">ROMAN</a>
     </div>
 
-    <section class="color-section" id="visualizer">
-        <div class="visualizer-left">
-            <h2>CHOOSE YOUR COLOUR</h2>
-            <p>Select a swatch to see how it looks on a house.</p>
-            <div class="color-grid">
-                <div class="swatch active" data-color="#1a1a1a" style="background: #1a1a1a;"></div>
-                <div class="swatch" data-color="#455a64" style="background: #455a64;"></div>
-                <div class="swatch" data-color="#c0622a" style="background: #c0622a;"></div>
-                <div class="swatch" data-color="#8b3a14" style="background: #8b3a14;"></div>
-                <div class="swatch" data-color="#5d4037" style="background: #5d4037;"></div>
-                <div class="swatch" data-color="#3e2723" style="background: #3e2723;"></div>
-                <div class="swatch" data-color="#90a4ae" style="background: #90a4ae;"></div>
-                <div class="swatch" data-color="#795548" style="background: #795548;"></div>
-            </div>
-            
-            <h3 style="margin-top: 40px;">TECHNICAL SPECIFICATIONS</h3>
-            <table class="specs-table">
-                <tr><th>Material</th><td>Stone Coated Steel</td></tr>
-                <tr><th>Weight</th><td>6.4 kg/sq.m</td></tr>
-                <tr><th>Coverage</th><td>0.46 sq.m / tile</td></tr>
-                <tr><th>Wind Rating</th><td>180 km/h</td></tr>
-                <tr><th>Fire Rating</th><td>Class A</td></tr>
-                <tr><th>Warranty</th><td>50 Years Limited</td></tr>
-            </table>
+    <section class="benefits-grid" style="background: #FAF8F5;">
+        <div class="benefit-item">
+            <span class="benefit-icon">🌧️</span>
+            <h3>WEATHER TIGHT</h3>
+            <p>Interlocking panels create a weather-tight barrier against driving rain and high winds.</p>
         </div>
-        <div class="visualizer-right">
-            <div class="house-visualizer">
-                <div id="roof-image"></div>
-                <span style="position: absolute; bottom: 20px;">House Preview Silhouette</span>
+        <div class="benefit-item">
+            <span class="benefit-icon">🪶</span>
+            <h3>LIGHTWEIGHT</h3>
+            <p>At only 6.4kg/sq.m, it can often be installed over existing roofs, saving time and waste.</p>
+        </div>
+        <div class="benefit-item">
+            <span class="benefit-icon">🔥</span>
+            <h3>FIRE RESISTANT</h3>
+            <p>Non-combustible steel core provides a Class A fire rating, the highest level of protection.</p>
+        </div>
+        <div class="benefit-item">
+            <span class="benefit-icon">🎨</span>
+            <h3>FADE RESISTANT</h3>
+            <p>Ceramic-coated stone granules maintain their vibrant colour for decades under intense UV.</p>
+        </div>
+    </section>
+
+    <section class="specs-section" id="visualizer">
+        <div class="specs-container">
+            <div class="visualizer-left">
+                <h2 style="font-size: 36px; color: #003358; margin-bottom: 20px;">DESIGN YOUR ROOF</h2>
+                <p style="margin-bottom: 30px;">Select from our premium colour palette to see how Skyban Shingle transforms your home's aesthetic.</p>
+                <div class="color-grid">
+                    <div class="swatch active" data-color="#1a1a1a" style="background: #1a1a1a;" title="Midnight Charcoal"></div>
+                    <div class="swatch" data-color="#455a64" style="background: #455a64;" title="Slate Blue"></div>
+                    <div class="swatch" data-color="#c0622a" style="background: #c0622a;" title="Terracotta"></div>
+                    <div class="swatch" data-color="#5d4037" style="background: #5d4037;" title="Bark Brown"></div>
+                    <div class="swatch" data-color="#3e2723" style="background: #3e2723;" title="Espresso"></div>
+                    <div class="swatch" data-color="#90a4ae" style="background: #90a4ae;" title="Silver Grey"></div>
+                </div>
+                
+                <h3 style="margin-top: 50px; border-bottom: 2px solid var(--primary); padding-bottom: 10px; display: inline-block;">TECHNICAL DATA</h3>
+                <table class="specs-table">
+                    <tr><th>Panel Size</th><td>1340mm x 420mm</td></tr>
+                    <tr><th>Installed Coverage</th><td>1280mm x 370mm</td></tr>
+                    <tr><th>Tiles per sq.m</th><td>2.12 pcs/sq.m</td></tr>
+                    <tr><th>Weight</th><td>6.4 kg/sq.m</td></tr>
+                    <tr><th>Base Metal</th><td>Aluminium-Zinc Alloy Steel</td></tr>
+                </table>
+            </div>
+            <div class="visualizer-right">
+                <div class="house-visualizer" style="height: 500px; overflow: hidden; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                    <div id="roof-image" style="width: 100%; height: 100%; background: #1a1a1a; transition: background 0.8s ease;">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200" alt="Roof Preview" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.5;">
+                    </div>
+                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; text-align: center; width: 100%; padding: 20px;">
+                        <h4 style="font-size: 24px; text-shadow: 0 2px 10px rgba(0,0,0,0.5);">COLOUR VISUALIZER</h4>
+                        <p>Click a swatch to change the roof tone</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER (Simplified) -->
-    <footer style="background: #1a1a1a; color: white; padding: 40px 5%; text-align: center;">
+    <section style="padding: 100px 10%; background: #fff;">
+        <h2 style="text-align: center; margin-bottom: 50px;">ADDITIONAL RESOURCES</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px;">
+            <a href="#" class="resource-link">📄 Product Brochure (PDF)</a>
+            <a href="#" class="resource-link">📐 Installation Guide</a>
+            <a href="#" class="resource-link">🛡️ Warranty Certificate</a>
+            <a href="#" class="resource-link">📊 Technical Spec Sheet</a>
+        </div>
+    </section>
+
+    <div class="sample-banner">
+        <div>
+            <h2>WANT TO SEE THE SHINGLE QUALITY?</h2>
+            <p>Order a sample panel to see the texture and colour in your local light.</p>
+        </div>
+        <a href="request-sample.html" class="cta-button">REQUEST SHINGLE SAMPLE</a>
+    </div>
+
+    <footer style="background: #1a1a1a; color: #999; padding: 60px 5%; text-align: center;">
         <p>© 2026 Skyban Roofing Systems. All rights reserved.</p>
     </footer>
 
